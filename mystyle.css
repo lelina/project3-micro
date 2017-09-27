@@ -14,18 +14,19 @@ ul.mainmenu ul ul li {display:none; background:#e5e5e5;}
 ul.mainmenu ul li:hover li{display: block;}
 ul.mainmenu ul ul {left: 100%; top: 0%}
 .cart {float:right;padding-top:15px;}
-.footer{background-color:#f2f2f2; font-size:11px;}
-.footer li, .footer li a {padding:5px 5px 5px 0px; color:black}
+.footer{background-color:#f2f2f2; font-size:11px;padding-top:10px;}
+.footer li, .footer li a {padding:5px 5px 5px 0px; color:black;}
 .footer a {padding-left: 15px; color:black;}
-.newjumbo {padding-left:0px; padding-right:0px; padding-top: 28px; margin-bottom:10px; margin-top:10px;}
+.newjumbo {position: relative; padding-left:0px; padding-right:0px; padding-top: 28px; margin-bottom:10px; margin-top:10px;}
 .newjumbo img {width: 1140px; }
 .carousel-inner {margin-top:15px; margin-bottom:15px;}
 .smallgrid { margin-left: 10px; margin-right: 10px;  margin-top: 15px;  margin-bottom: 20px; padding-left: 0px;  padding-right: 0px; padding-top: 28px;}
 ul.list-unstyled {padding-left: 5px;  padding-right: 5px;}
 ul.list-unstyled img {width: 248px; padding-top: 15px;}
+ul.list-unstyled li a {color:black; padding-top:10px;}
 .cap1{position: absolute;  left: 10%; top:30%; bottom: 20px;  right: auto;  z-index: 10;  color: #fff;text-align:left;}
 .cap2{position: absolute;  left: 10%; top:30%; bottom: 20px;  right: auto;  z-index: 10;  color: black;text-align:left;}
-/*.cap3{position: absolute;  left: 10%; top:30%; bottom: 20px;  right: auto;  color: black;text-align:left;}*/
+.cap3{position: absolute;  left: 7%; top:35%;  right: auto;  color: black;text-align:left;}
 .submenu{z-index:998; position:relative;}
 ul.subnmenu{text-align:left; display:inline; margin:0; padding:0; list-style:none;}
 ul.submenu li {display:inline-block; position:relative; padding: 7px 7px; background:white;}
