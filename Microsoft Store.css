@@ -176,7 +176,7 @@ ul.nav.navbar-nav li a {
 
 .grid {
 	padding: 12px 36px 0 36px;
-	margin-bottom: 50px;
+
 }
 
 .grid h2 {
@@ -193,6 +193,54 @@ ul.nav.navbar-nav li a {
 	padding-top: 10px;
 }
 
+.grid-content {
+	padding: 0;
+}
+
+
+.item div {
+	margin: 12px 0 0 0;
+	padding: 0 5px;
+}
+
+.item div a h4 {
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.item div a {
+	color: inherit;
+}
+
+.item div a:hover {
+	text-decoration: none;
+}
+
+.item div a:hover h4 {
+	text-decoration: underline;
+}
+
+.item div a img {
+	padding: 10px 10px;
+}
+
+.item div a:hover img {
+	border: 1px solid black;
+}
+
+.item div div {
+	padding-left: 0;
+}
+
+.fa-star {
+	color: #ccc;
+
+}
+
+.checked {
+	color: blue;
+}
+
 a.row4 {
 	color: #000;
 }
@@ -206,5 +254,11 @@ a.row4:hover h3 {
 }
 
 
-.footer{background-color:#f2f2f2; font-size:11px;}
+
+
+.footer {
+	background-color:#f2f2f2;
+	font-size:11px;
+	margin-top: 50px;
+}
 .footer li a,.footer li, .footer a {padding:5px; color:black}

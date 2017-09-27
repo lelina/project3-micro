@@ -9,17 +9,157 @@
   		<!-- Latest compiled and minified CSS -->
   		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+      <!-- Add icon library -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   		<!-- jQuery library -->
   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 
   		<!-- Latest compiled JavaScript -->
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script>
+  			$(document).ready(function(){
+
+  			$('#itemslider').carousel({ interval: 3000 });
+
+  			$('.carousel-showmanymoveone .item').each(function(){
+  			var itemToClone = $(this);
+
+  			for (var i=1;i<4;i++) {
+  			itemToClone = itemToClone.next();
+
+  			if (!itemToClone.length) {
+  			itemToClone = $(this).siblings(':first');
+  			}
+
+  			itemToClone.children(':first-child').clone()
+  			.addClass("cloneditem-"+(i))
+  			.appendTo($(this));
+  			}
+  			});
+  			});
+  		</script>
   		<link href="Microsoft Store.css" type="text/css" rel="stylesheet">
   		<style>
 
+			#slider-control img{
+				padding-top: 150px;
+				margin: 0 auto;
+			}
 
+      .carousel-control.right {
+        right: -50px;
+      }
 
+      .carousel-control.left {
+        left: -50px;
+      }
+			@media screen and (max-width: 992px){
+			#slider-control img {
+				padding-top: 70px;
+				margin: 0 auto;
+			}
+			}
 
+			.carousel-showmanymoveone .carousel-control {
+				width: 4%;
+				background-image: none;
+			}
+			.carousel-showmanymoveone .carousel-control.left {
+				margin-left: 5px;
+			}
+			.carousel-showmanymoveone .carousel-control.right {
+				margin-right: 5px;
+			}
+			.carousel-showmanymoveone .cloneditem-1,
+			.carousel-showmanymoveone .cloneditem-2,
+			.carousel-showmanymoveone .cloneditem-3,
+			.carousel-showmanymoveone .cloneditem-4,
+			.carousel-showmanymoveone .cloneditem-5 {
+				display: none;
+			}
+			@media all and (min-width: 768px) {
+				.carousel-showmanymoveone .carousel-inner > .active.left,
+				.carousel-showmanymoveone .carousel-inner > .prev {
+					left: -50%;
+				}
+				.carousel-showmanymoveone .carousel-inner > .active.right,
+				.carousel-showmanymoveone .carousel-inner > .next {
+					left: 50%;
+				}
+				.carousel-showmanymoveone .carousel-inner > .left,
+				.carousel-showmanymoveone .carousel-inner > .prev.right,
+				.carousel-showmanymoveone .carousel-inner > .active {
+					left: 0;
+				}
+				.carousel-showmanymoveone .carousel-inner .cloneditem-1 {
+					display: block;
+				}
+			}
+			@media all and (min-width: 768px) and (transform-3d), all and (min-width: 768px) and (-webkit-transform-3d) {
+				.carousel-showmanymoveone .carousel-inner > .item.active.right,
+				.carousel-showmanymoveone .carousel-inner > .item.next {
+					-webkit-transform: translate3d(50%, 0, 0);
+					transform: translate3d(50%, 0, 0);
+					left: 0;
+				}
+				.carousel-showmanymoveone .carousel-inner > .item.active.left,
+				.carousel-showmanymoveone .carousel-inner > .item.prev {
+					-webkit-transform: translate3d(-50%, 0, 0);
+					transform: translate3d(-50%, 0, 0);
+					left: 0;
+				}
+				.carousel-showmanymoveone .carousel-inner > .item.left,
+				.carousel-showmanymoveone .carousel-inner > .item.prev.right,
+				.carousel-showmanymoveone .carousel-inner > .item.active {
+					-webkit-transform: translate3d(0, 0, 0);
+					transform: translate3d(0, 0, 0);
+					left: 0;
+				}
+			}
+			@media all and (min-width: 992px) {
+				.carousel-showmanymoveone .carousel-inner > .active.left,
+				.carousel-showmanymoveone .carousel-inner > .prev {
+					left: -16.666%;
+				}
+				.carousel-showmanymoveone .carousel-inner > .active.right,
+				.carousel-showmanymoveone .carousel-inner > .next {
+					left: 16.666%;
+				}
+				.carousel-showmanymoveone .carousel-inner > .left,
+				.carousel-showmanymoveone .carousel-inner > .prev.right,
+				.carousel-showmanymoveone .carousel-inner > .active {
+					left: 0;
+				}
+				.carousel-showmanymoveone .carousel-inner .cloneditem-2,
+				.carousel-showmanymoveone .carousel-inner .cloneditem-3,
+				.carousel-showmanymoveone .carousel-inner .cloneditem-4,
+				.carousel-showmanymoveone .carousel-inner .cloneditem-5,
+				.carousel-showmanymoveone .carousel-inner .cloneditem-6  {
+					display: block;
+				}
+			}
+			@media all and (min-width: 992px) and (transform-3d), all and (min-width: 992px) and (-webkit-transform-3d) {
+				.carousel-showmanymoveone .carousel-inner > .item.active.right,
+				.carousel-showmanymoveone .carousel-inner > .item.next {
+					-webkit-transform: translate3d(25%, 0, 0);
+					transform: translate3d(25%, 0, 0);
+					left: 0;
+				}
+				.carousel-showmanymoveone .carousel-inner > .item.active.left,
+				.carousel-showmanymoveone .carousel-inner > .item.prev {
+					-webkit-transform: translate3d(-25%, 0, 0);
+					transform: translate3d(-25%, 0, 0);
+					left: 0;
+				}
+				.carousel-showmanymoveone .carousel-inner > .item.left,
+				.carousel-showmanymoveone .carousel-inner > .item.prev.right,
+				.carousel-showmanymoveone .carousel-inner > .item.active {
+					-webkit-transform: translate3d(0, 0, 0);
+					transform: translate3d(0, 0, 0);
+					left: 0;
+				}
+			}
   		</style>
   </head>
   <body>
@@ -150,6 +290,108 @@
             <span>Tìm mua Office Suites</span>
             <a href="#" id="blue-link">Hiện tất cả</a>
           </h2>
+          <!-- Grid1 Content -->
+          <div class="container-fluid grid-content">
+  					<div class="item">
+  						<div class="col-xs-12 col-sm-6 col-md-3">
+  							<a href="#">
+                <img src="images\childFirst\grid1-col1.png" class="img-responsive center-block">
+  							<h4>Office 365 Home</h4>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+  							<p>1.699.000,00 ₫ mỗi năm</p>
+                <p>170.000,00 ₫ mỗi tháng</p>
+                <div>
+                  •Phù hợp với gia đình </br>
+                  •Cho 5 PC hoặc máy Mac, 5 máy tính bảng, bao gồm iPad và các máy tính bảng chạy Android hoặc Windows, cộng thêm 5 điện thoại </br>
+                  •Các phiên bản được cài đặt đầy đủ của Word, Excel, PowerPoint, Outlook và OneNote, cộng thêm Publisher và Access dành riêng cho PC</br>
+                  •Các nâng cấp độc quyền và tính năng mới </br>
+                  •1 TB dung lượng lưu trữ đám mây OneDrive cho mỗi người dùng, tối đa 5 người dùng</br>
+                  •Hỗ trợ từ Microsoft qua trò chuyện hoặc điện thoại mà không mất thêm phí<br><br>
+
+                  Đăng ký của bạn sẽ tự động gia hạn. Hủy bỏ bất cứ lúc nào. <br>
+                  Tương thích với Windows 7 trở lên và Mac OS X 10.10. <br>
+                  Tích hợp tất cả ngôn ngữ.
+                </div>
+                </a>
+  						</div>
+  					</div>
+
+  					<div class="item">
+  						<div class="col-xs-12 col-sm-6 col-md-3">
+  							<a href="#">
+                <img src="images\childFirst\grid1-col2.png" class="img-responsive center-block">
+  							<h4>Office 365 Personal</h4>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+  							<p>1.299.000,00 ₫ mỗi năm</P>
+                <p>130.000,00 ₫ mỗi tháng</p>
+                <div>
+                  •Phù hợp với cá nhân<br>
+                  •Cho 1 PC hoặc máy Mac, 1 máy tính bảng, bao gồm iPad hoặc máy tính bảng chạy Android hoặc Windows, cộng thêm 1 điện thoại<br>
+                  •Các phiên bản được cài đặt đầy đủ của Word, Excel, PowerPoint, Outlook và OneNote, cộng thêm Publisher và Access dành riêng cho PC<br>
+                  •Các nâng cấp độc quyền và tính năng mới <br>
+                  •1 TB dung lượng lưu trữ đám mây OneDrive<br>
+                  •Hỗ trợ từ Microsoft qua trò chuyện hoặc điện thoại mà không mất thêm phí<br><br>
+                  Đăng ký của bạn sẽ tự động gia hạn. Hủy bỏ bất cứ lúc nào.<br>
+                  Tương thích với Windows 7 trở lên và Mac OS X 10.10.<br>
+                  Tích hợp tất cả ngôn ngữ.
+                </div>
+                </a>
+  						</div>
+  					</div>
+
+  					<div class="item">
+  						<div class="col-xs-12 col-sm-6 col-md-3">
+  							<a href="#">
+                <img src="images\childFirst\grid1-col3.png" class="img-responsive center-block">
+  							<h4>Office Home & Student 2016 for PC</h4>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+  							<p>2.499.000,00 ₫</p>
+                <div>
+                  • Cho 1 PC<br>
+                  • Các phiên bản được cài đặt đầy đủ của Word, Excel, PowerPoint và OneNote<br>
+                  • Lưu trữ tệp trong nền tảng điện toán đám mây với OneDrive<br><br>
+                  Tương thích với Windows 7 trở lên<br>
+                  Tất cả ngôn ngữ được bao gồm
+                </div>
+                </a>
+  						</div>
+  					</div>
+
+  					<div class="item">
+  						<div class="col-xs-12 col-sm-6 col-md-3">
+  							<a href="#">
+                <img src="images\childFirst\grid1-col4.png" class="img-responsive center-block">
+  							<h4>Office Home & Business 2016 for PC</h4>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <p>6.099.000,00 ₫</p>
+                <div>
+                  • Các phiên bản được cài đặt đầy đủ của Word, Excel, PowerPoint và OneNote<br>
+                  • Cho 1 PC<br>
+                  • Lưu trữ tệp trong nền tảng điện toán đám mây với OneDrive<br><br>
+                  Tương thích với Windows 7 trở lên<br>
+                  Tất cả ngôn ngữ được bao gồm
+                </div>
+                </a>
+  						</div>
+  					</div>
+
+          </div>
         </div>
       </div>
 
@@ -160,6 +402,44 @@
             <span>Mua Windows</span>
             <a href="#" id="blue-link">Hiện tất cả</a>
           </h2>
+
+          <div class="container-fluid grid-content">
+  					<div class="item">
+  						<div class="col-xs-12 col-sm-6 col-md-3">
+  							<a href="#">
+                <img src="images\childFirst\row2-col1.jpg" class="img-responsive center-block">
+  							<h4>Windows 10 Home</h4>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+  							<p>3.499.000,00 ₫</p>
+                <div>
+                  Windows 10 là cộng sự giúp bạn thực hiện mọi việc. Khởi động nhanh hơn; menu Bắt đầu tuy quen thuộc nhưng đã được mở rộng; và những cách mới tuyệt vời để hoàn thành công việc trên nhiều thiết bị khác nhau. Bạn cũng sẽ thích các tính năng đổi mới như trình duyệt hoàn toàn mới được thiết kế cho các hoạt động trực tuyến; cùng với Cortana - trợ lý cá nhân kỹ thuật số giúp bạn trong suốt cả ngày.
+                </div>
+                </a>
+  						</div>
+  					</div>
+
+  					<div class="item">
+  						<div class="col-xs-12 col-sm-6 col-md-3">
+  							<a href="#">
+                <img src="images\childFirst\row2-col2.jpg" class="img-responsive center-block">
+  							<h4>Windows 10 Pro</h4>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+  							<p>5.999.000,00 ₫</P>
+                <div>
+                  Với Windows 10 Pro; bạn đã có một đối tác kinh doanh tuyệt vời. Windows 10 Pro có tất cả các tính năng của Windows 10 Home; cùng với chức năng kinh doanh quan trọng giúp mật mã hóa; đăng nhập từ xa; tạo các máy ảo và nhiều tính năng khác. Khởi động nhanh hơn; menu Bắt đầu tuy quen thuộc nhưng đã được mở rộng; những cách mới tuyệt vời để hoàn thành công việc; cùng với những tính năng đổi mới như trình duyệt hoàn toàn mới được thiết kế cho các hoạt động trực tuyến và Cortana; trợ lý kỹ thuật số cá nhân hóa hơn.
+                </div>
+                </a>
+  						</div>
+  					</div>
+          </div>
         </div>
       </div>
 
@@ -170,6 +450,312 @@
             <span>Mua các ứng dụng Office độc lập</span>
             <a href="#" id="blue-link">Hiện tất cả</a>
           </h2>
+
+
+          <div class="row">
+
+      				<div class="carousel carousel-showmanymoveone slide" id="itemslider">
+      					<div class="carousel-inner">
+
+                  <!-- Item 1 -->
+                  <div class="item active">
+        						<div class="col-xs-12 col-sm-6 col-md-3">
+        							<a href="#">
+                        <img src="images\childFirst\row3-img1.jpg" class="img-responsive center-block">
+          							<h4>Access 2016</h4>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p>2.899.000,00 ₫</p>
+                        <div>
+                          • Đối với PC<br>
+                          • Dễ dàng tạo các ứng dụng cơ sở dữ liệu.<br><br>
+                          Tương thích với Windows 7 trở lên<br>
+                          Tất cả ngôn ngữ được bao gồm
+                        </div>
+                      </a>
+        					  </div>
+        				  </div>
+
+                  <!-- Item 2 -->
+                  <div class="item">
+        						<div class="col-xs-12 col-sm-6 col-md-3">
+        							<a href="#">
+                        <img src="images\childFirst\row3-img2.jpg" class="img-responsive center-block">
+          							<h4>Excel 2016</h4>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p>2.899.000,00 ₫</p>
+                        <div>
+                          • Đối với PC<br>
+                          • Khám phá thông tin chuyên sâu và kể chuyện bằng dữ liệu của bạn<br><br>
+                          Tương thích với Windows 7 trở lên<br>
+                          Tất cả ngôn ngữ được bao gồm
+                        </div>
+                      </a>
+        					  </div>
+        				  </div>
+
+                  <!-- Item 3 -->
+                  <div class="item">
+        						<div class="col-xs-12 col-sm-6 col-md-3">
+        							<a href="#">
+                        <img src="images\childFirst\row3-img3.jpg" class="img-responsive center-block">
+          							<h4>Excel Home and Student 2016</h4>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p>1.499.000,00 ₫</p>
+                        <div>
+                          • Khám phá thông tin chuyên sâu và kể chuyện bằng dữ liệu của bạn<br>
+                          • Cho 1 PC<br><br>
+                          Tương thích với Windows 7 trở lên<br>
+                          Tất cả ngôn ngữ được bao gồm<br>
+                          Sử dụng cho mục đích phi thương mại
+                        </div>
+                      </a>
+        					  </div>
+        				  </div>
+
+                  <!-- Item 4 -->
+                  <div class="item">
+        						<div class="col-xs-12 col-sm-6 col-md-3">
+        							<a href="#">
+                        <img src="images\childFirst\row3-img4.jpg" class="img-responsive center-block">
+          							<h4>Outlook 2016</h4>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p>2.899.000,00 ₫</p>
+                        <div>
+                          • Đối với PC<br>
+                          • Outlook 2016 giúp bạn tập trung vào những nội dung quan trọng với chế độ xem rõ ràng cho email, lịch và danh bạ<br><br>
+                          Tương thích với Windows 7 trở lên<br>
+                          Tất cả ngôn ngữ được bao gồm
+                        </div>
+                      </a>
+        					  </div>
+        				  </div>
+
+                  <!-- Item 5 -->
+                  <div class="item">
+        						<div class="col-xs-12 col-sm-6 col-md-3">
+        							<a href="#">
+                        <img src="images\childFirst\row3-img5.jpg" class="img-responsive center-block">
+          							<h4>Powerpoint 2016</h4>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p>2.899.000,00 ₫</p>
+                        <div>
+                          • Đối với PC<br>
+                          • Sáng tạo, cộng tác và trình bày ý tưởng của bạn một cách hiệu quả<br><br>
+                          Tương thích với Windows 7 trở lên<br>
+                          Tất cả ngôn ngữ được bao gồm
+                        </div>
+                      </a>
+        					  </div>
+        				  </div>
+
+                  <!-- Item 6 -->
+                  <div class="item">
+        						<div class="col-xs-12 col-sm-6 col-md-3">
+        							<a href="#">
+                        <img src="images\childFirst\row3-img6.jpg" class="img-responsive center-block">
+          							<h4>Powerpoint Home and Student 2016</h4>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p>1.499.000,00 ₫</p>
+                        <div>
+                          • Cho 1 PC<br>
+                          • PowerPoint 2016 giúp bạn dễ dàng tạo, cộng tác và trình bày các ý tưởng của mình một cách hiệu quả<br><br>
+                          Tương thích với Windows 7 trở lên<br>
+                          Tất cả ngôn ngữ được bao gồm<br>
+                          Sử dụng cho mục đích phi thương mại
+                        </div>
+                      </a>
+        					  </div>
+        				  </div>
+
+                  <!-- Item 7 -->
+                  <div class="item">
+        						<div class="col-xs-12 col-sm-6 col-md-3">
+        							<a href="#">
+                        <img src="images\childFirst\row3-img7.jpg" class="img-responsive center-block">
+          							<h4>Publisher 2016</h4>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p>2.899.000,00 ₫</p>
+                        <div>
+                          • Đối với PC<br>
+                          • Publisher 2016 là một phương thức đơn giản có thể giúp các ấn phẩm chuyên nghiệp tạo được ấn tượng<br><br>
+                          Tương thích với Windows 7 trở lên<br>
+                          Tất cả ngôn ngữ được bao gồm
+                        </div>
+                      </a>
+        					  </div>
+        				  </div>
+
+                  <!-- Item 8 -->
+                  <div class="item">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                      <a href="#">
+                        <img src="images\childFirst\row3-img8.jpg" class="img-responsive center-block">
+                        <h4>Word 2016</h4>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p>2.899.000,00 ₫</p>
+                        <div>
+                          • Đối với PC<br>
+                          • Tạo những tài liệu tuyệt đẹp và thu hút hơn<br><br>
+                          Tương thích với Windows 7 trở lên<br>
+                          Tất cả ngôn ngữ được bao gồm
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Item 9 -->
+                  <div class="item">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                      <a href="#">
+                        <img src="images\childFirst\row3-img9.jpg" class="img-responsive center-block">
+                        <h4>Word Home and Student 2016</h4>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <p>1.499.000,00 ₫</p>
+                        <div>
+                          • Tạo những tài liệu tuyệt đẹp và thu hút hơn<br>
+                          • Cho 1 PC<br><br>
+                          Tương thích với Windows 7 trở lên<br>
+                          Tất cả ngôn ngữ được bao gồm<br>
+                          Sử dụng cho mục đích phi thương mại
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Item 10 -->
+                  <div class="item">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                      <a href="#">
+                        <img src="images\childFirst\row3-img10.png" class="img-responsive center-block">
+                        <h4>Project Standard 2016</h4>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p>11.999.000,00 ₫</p>
+                        <div>
+                          • Nhanh chóng bắt đầu và thực hiện các dự án thành công<br>
+                          • Cho 1 PC<br><br>
+                          Tương thích với Windows 7 trở lên<br>
+                          Tất cả ngôn ngữ được bao gồm
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Item 11 -->
+                  <div class="item">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                      <a href="#">
+                        <img src="images\childFirst\row3-img11.png" class="img-responsive center-block">
+                        <h4>Project Professional</h4>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <p>23.999.000,00 ₫</p>
+                        <div>
+                          • Cộng tác với người khác để dễ dàng bắt đầu và thực hiện các dự án thành công<br>
+                          • Cho 1 PC<br><br>
+                          Tương thích với Windows 7 trở lên<br>
+                          Tất cả ngôn ngữ được bao gồm
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Item 12 -->
+                  <div class="item">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                      <a href="#">
+                        <img src="images\childFirst\row3-img12.png" class="img-responsive center-block">
+                        <h4>Viso Standard 2016</h4>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p>6.299.000,00 ₫</p>
+                        <div>
+                          • Đơn giản hóa các thông tin phức tạp thông qua những sơ đồ đơn giản, dễ hiểu<br>
+                          • Cho 1 PC<br><br>
+                          Tương thích với Windows 7 trở lên<br>
+                          Tất cả ngôn ngữ được bao gồm
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Item 13 -->
+                  <div class="item">
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                      <a href="#">
+                        <img src="images\childFirst\row3-img13.png" class="img-responsive center-block">
+                        <h4>Viso Professional 2016</h4>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p>11.999.000,00 ₫</p>
+                        <div>
+                          • Dễ dàng tạo và chia sẻ sơ đồ liên kết dữ liệu, giúp đơn giản hoá thông tin phức tạp<br>
+                          • Cho 1 PC <br><br>
+                          Tương thích với Windows 7 trở lên<br>
+                          Tất cả ngôn ngữ được bao gồm
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="slider-control">
+      						<a class="left carousel-control" href="#itemslider" data-slide="prev"><img src="https://s12.postimg.org/uj3ffq90d/arrow_left.png" alt="Left" class="img-responsive"></a>
+      						<a class="right carousel-control" href="#itemslider" data-slide="next"><img src="https://s12.postimg.org/djuh0gxst/arrow_right.png" alt="Right" class="img-responsive"></a>
+      					</div>
+
+              </div>
+            </div>
+
+
         </div>
       </div>
 
