@@ -95,6 +95,7 @@
 				.carousel-showmanymoveone .carousel-inner .cloneditem-1 {
 					display: block;
 				}
+
 			}
 			@media all and (min-width: 768px) and (transform-3d), all and (min-width: 768px) and (-webkit-transform-3d) {
 				.carousel-showmanymoveone .carousel-inner > .item.active.right,
@@ -169,76 +170,83 @@
 				<div class="container-fluid">
 					<!-- Logo -->
 					<div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
 						<a class="navbar-brand" href="#"><img src="images\Home\icon (microsoft).jpg" height="25" width="auto" style="float: left; padding-left: 10px;"></a>
 					</div>
 					<!-- Navbar chính -->
-					<ul class="nav navbar-nav mainmenu">
-						<li><a href="#">Cửa hàng</a></li>
-            <li class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Sản phẩm  <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li>
-                  <a href="">Phần mềm và dịch vụ</a>
-                  <ul class="dropdown-menu sub-dropdown">
-                    <li><a href="#">Windows</a></li>
-                    <li><a href="#">Office</a></li>
-                    <li><a href="#">Bản tải xuống và bảo mật miễn phí</a></li>
-                    <li><a href="#">MSN</a></li>
-                    <li><a href="#">Microsoft Edge</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="">Thiết bị và Xbox</a>
-                  <ul class="dropdown-menu sub-dropdown">
-                    <li><a href="#">Phụ kiện máy tính</a></li>
-                    <li><a href="#">Microsoft Lumia</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="">Dành cho doanh nghiệp</a>
-                  <ul class="dropdown-menu sub-dropdown">
-                    <li><a href="#">Windows dành cho doanh nghiệp</a></li>
-                    <li><a href="#">Office cho doanh nghiệp</a></li>
-                    <li><a href="#">Giải pháp doanh nghiệp</a></li>
-                    <li><a href="#">Tìm nhà cung cấp giải pháp</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="">Dành cho nhà phát triển và chuyên gia CNTT</a>
-                  <ul class="dropdown-menu sub-dropdown">
-                    <li><a href="#">TechNet</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="">Dành cho sinh viên và giảng viên</a>
-                  <ul class="dropdown-menu sub-dropdown">
-                    <li><a href="#">Office cho học sinh</a></li>
-                    <li><a href="#">OneNote trong lớp học</a></li>
-                    <li><a href="#">Microsoft trong giáo dục</a></li>
-                  </ul>
-                </li>
+          <div class="collapse navbar-collapse" id="myNavbar">
+  					<ul class="nav navbar-nav mainmenu">
+  						<li><a href="#">Cửa hàng</a></li>
+              <li class="dropdown">
+  							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Sản phẩm  <span class="caret"></span></a>
+  							<ul class="dropdown-menu">
+  								<li>
+                    <a href="">Phần mềm và dịch vụ <span class="glyphicon glyphicon-menu-right"></span></a>
+                    <ul class="dropdown-menu sub-dropdown">
+                      <li><a href="#">Windows</a></li>
+                      <li><a href="#">Office</a></li>
+                      <li><a href="#">Bản tải xuống và bảo mật miễn phí</a></li>
+                      <li><a href="#">MSN</a></li>
+                      <li><a href="#">Microsoft Edge</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="">Thiết bị và Xbox <span class="glyphicon glyphicon-menu-right"></span></a>
+                    <ul class="dropdown-menu sub-dropdown">
+                      <li><a href="#">Phụ kiện máy tính</a></li>
+                      <li><a href="#">Microsoft Lumia</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="">Dành cho doanh nghiệp <span class="glyphicon glyphicon-menu-right"></span></a>
+                    <ul class="dropdown-menu sub-dropdown">
+                      <li><a href="#">Windows dành cho doanh nghiệp</a></li>
+                      <li><a href="#">Office cho doanh nghiệp</a></li>
+                      <li><a href="#">Giải pháp doanh nghiệp</a></li>
+                      <li><a href="#">Tìm nhà cung cấp giải pháp</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="">Dành cho nhà phát triển và chuyên<br> gia CNTT <span class="glyphicon glyphicon-menu-right"></span></a>
+                    <ul class="dropdown-menu sub-dropdown">
+                      <li><a href="#">TechNet</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="">Dành cho sinh viên và giảng viên <span class="glyphicon glyphicon-menu-right"></span></a>
+                    <ul class="dropdown-menu sub-dropdown">
+                      <li><a href="#">Office cho học sinh</a></li>
+                      <li><a href="#">OneNote trong lớp học</a></li>
+                      <li><a href="#">Microsoft trong giáo dục</a></li>
+                    </ul>
+                  </li>
 
-							</ul>
-						</li>
-						<li><a href="#">Hỗ trợ</a></li>
-					</ul>
-					<!-- Đăng nhập -->
-					<ul class="nav navbar-nav navbar-right">
-						<li><a id="blue-link" href="#">Đăng nhập</a></li>
-					</ul>
-					<!-- Search and shopping bar -->
-					<form class="navbar-form navbar-right">
-						<div class="input-group">
-							<input type="text" class="form-control" size="20">
-							<div class="input-group-btn">
-								<button class="btn btn-default" type="submit">
-									<i class="glyphicon glyphicon-search"></i>
-								</button>
-							</div>
-						</div>
-						<a href="#"><i class="glyphicon glyphicon-shopping-cart"></i></a>
-					</form>
+  							</ul>
+  						</li>
+  						<li><a href="#">Hỗ trợ</a></li>
+  					</ul>
 
+  					<!-- Đăng nhập -->
+  					<ul class="nav navbar-nav navbar-right">
+  						<li><a id="blue-link" href="#">Đăng nhập</a></li>
+  					</ul>
+  					<!-- Search and shopping bar -->
+  					<form class="navbar-form navbar-right">
+  						<div class="input-group">
+  							<input type="text" class="form-control" size="20">
+  							<div class="input-group-btn">
+  								<button class="btn btn-default" type="submit">
+  									<i class="glyphicon glyphicon-search"></i>
+  								</button>
+  							</div>
+  						</div>
+  						<a href="#"><i class="glyphicon glyphicon-shopping-cart"></i></a>
+  					</form>
+          </div>
 				</div>
 			</nav>
 			<!--Thanh điều hướng phụ -->
@@ -876,9 +884,7 @@
               </div>
 
               <div class="row">
-                  <a href="#"> <img src="file:///E:/Group3_Project/images/earth.png" height="15" width="15">Tiếng
-                      Việt (Việt Nam)
-                  </a>
+                  <a href="#"><span class="glyphicon glyphicon-globe"></span>  Tiếng Việt (Việt Nam)</a>
 
                   <ul class="list-inline pull-right">
                       <li><a href="#"> Liên hệ với chúng tôi </a></li>
@@ -886,7 +892,7 @@
                       <li><a href="#"> Điều khoản sử dụng </a></li>
                       <li><a href="#"> Nhãn hiệu </a></li>
                       <li><a href="#"> Giới thiệu về quảng cáo của chúng tôi</a></li>
-                      <li>© Microsoft 2017</li>
+                      <li id="copyright">© Microsoft 2017</li>
                   </ul>
               </div>
           </div>

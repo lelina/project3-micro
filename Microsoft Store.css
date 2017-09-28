@@ -72,8 +72,17 @@ h3 {
 	max-width: 310px;
 }
 
+.dropdown-menu li a span {
+	float:right;
+	margin-right: -1.5rem;
+}
+
 .dropdown-menu li {
-	padding: 10px;
+	padding: 18px 30px 18px 24px;
+}
+
+.dropdown-menu li a:first-child {
+	padding: 0 0.5rem 0 0;
 }
 
 .dropdown-menu li:hover, .dropdown-menu li a:hover {
@@ -151,14 +160,14 @@ ul.nav.navbar-nav li a {
 	position: absolute;
 	width: 1209px;
 	height: 455px;
-	top: 120px;
+	top: 100px;
 	bottom: 0;
 	z-index: 100;
 }
 
 .jumbotron-content div {
 	width: 40%;
-	margin: 120px 0;
+	margin: 140px 0;
 }
 
 .jumbotron-content div a {
@@ -199,7 +208,7 @@ ul.nav.navbar-nav li a {
 
 
 .item div {
-	margin: 12px 0 0 0;
+	margin: 1.5rem 0 0 0;
 	padding: 0 5px;
 }
 
@@ -261,4 +270,26 @@ a.row4:hover h3 {
 	font-size:11px;
 	margin-top: 50px;
 }
-.footer li a,.footer li, .footer a {padding:5px; color:black}
+
+.footer .container {
+	padding-top: 36px;
+	width: 90%;
+	margin: 0 auto;
+}
+.footer li, .footer a {
+	color: #616161;
+}
+
+.footer li {
+	padding:5px;
+	font-size: 1rem;
+}
+
+.footer a, #copyright {
+	font-size: 0.75rem;
+}
+
+/*REponsive*/
+@media (min-width: 768px) and (max-width: 992px) {
+	.jumbotron-content {top: 170px;}
+}
