@@ -8,6 +8,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="mystyle.css">
+    <script src="index.js"></script>
+
 </head>
 
 <body>
@@ -62,7 +64,7 @@
                             <li><a href="#"> Microsoft Lumia </a></li>
                         </ul>
                     </li>
-                    <li><a href="#"> Dành cho doanh nghiệp <span class="caret"></span></a>
+                    <li><a href="#"> Dành cho doanh nghiệp <span class="glyphicons glyphicons-chevron-right"></span> <span class="caret"></span></a>
                         <ul>
                             <li><a href="#"> Windows dành cho doanh nghiệp </a></li>
                             <li><a href="#"> Office cho Doanh nghiệp </a></li>
@@ -126,7 +128,7 @@
                 <div class="carousel-caption cap1">
                     <h3>Bạn sẽ làm gì</h3>
                     <p>Office 365 khai mở tiềm năng của thiết bị và giúp bạn đạt được thành tích cao nhất</p>
-                    <button type="button" class="btn btn-default allbutton active"> Tải Office 365 </button>
+                    <button type="button" class="btn btn-default allbutton active whiteb"> Tải Office 365 </button>
                 </div>
             </div>
 
@@ -136,7 +138,7 @@
                 <div class="carousel-caption cap2">
                     <h3>Windows Hello</h3>
                     <p>Bạn chính là mật khẩu</p>
-                    <button type="button" class="btn btn-default allbutton active">Tìm hiểu cách hoạt động </button>
+                    <button type="button" class="btn btn-default allbutton active blackb">Tìm hiểu cách hoạt động </button>
                 </div>
             </div>
         </div>
@@ -155,42 +157,41 @@
 <!--first grid with 4 even columns-->
 <div class="container">
     <div class="row smallgrid">
-        <div class="col-sm-3">
-            <ul class="list-unstyled">
-                <li><a href="#"> <img src="images\home\msStore.png"></a></li>
-                <li style="font-weight: bold;"><a href="#"> Microsoft
-                    store </a></li>
-                <li><a href="#"> Tìm mọi thứ bạn cần cho gia đình, trường
-                    học, công việc và giải trí. </a></li>
-                <li><a href="#"> MUA TẠI MICROSOFT STORE </a></li>
-            </ul>
+        <div class="col-sm-3 products-grid-item">
+            <a href="#">
+                <img src="images/home/msStore.png">
+                <h3> Microsoft store </h3>
+                <p>Tìm mọi thứ bạn cần cho gia đình, trường
+                    học, công việc và giải trí.</p>
+                <h5>MUA TẠI MICROSOFT STORE</h5>
+            </a>
         </div>
-        <div class="col-sm-3">
-            <ul class="list-unstyled">
-                <li><a href="#"> <img src="images/home/outlook.png"></a></li>
-                <li style="font-weight: bold;"><a href="#"> Outlook </a></li>
-                <li><a href="#"> Ứng dụng email miễn phí cho iOS, Android
-                    và Windows. </a></li>
-                <li><a href="#"> TẢI ỨNG DỤNG EMAIL OUTLOOK </a></li>
-            </ul>
+        <div class="col-sm-3 products-grid-item">
+            <a  href="#">
+                <img src="images/home/outlook.png">
+                <h3> Outlook </h3>
+                <p>Ứng dụng email miễn phí cho iOS, Android
+                    và Windows.</p>
+                <h5>TẢI ỨNG DỤNG EMAIL OUTLOOK</h5>
+            </a>
         </div>
-        <div class="col-sm-3">
-            <ul class="list-unstyled">
-                <li><a href="#"> <img src="images/home/onenote.png"></a></li>
-                <li style="font-weight: bold;"><a href="#"> OneNote </a></li>
-                <li><a href="#"> Sắp xếp khoa học các ghi chú và cuộc sống
-                    của bạn.</a></li>
-                <li><a href="#"> TẢI XUỐNG ONENOTE MIỄN PHÍ </a></li>
-            </ul>
+        <div class="col-sm-3 products-grid-item">
+            <a  href="#">
+                <img src="images/home/onenote.png">
+                <h3> OneNote </h3>
+                <p>Sắp xếp khoa học các ghi chú và cuộc sống
+                    của bạn.</p>
+                <h5>TẢI XUỐNG ONENOTE MIỄN PHÍ</h5>
+            </a>
         </div>
-        <div class="col-sm-3">
-            <ul class="list-unstyled">
-                <li><a href="#"> <img src="images/home/sway.png"></a></li>
-                <li style="font-weight: bold;"><a href="#"> Sway </a></li>
-                <li><a href="#"> Dễ dàng biến ý tưởng của bạn thành hiện
-                    thực trên web.</a></li>
-                <li><a href="#"> BẮT ĐẦU VỚI SWAY </a></li>
-            </ul>
+        <div class="col-sm-3 products-grid-item">
+            <a  href="#">
+                <img src="images/home/sway.png">
+                <h3> Sway </h3>
+                <p>Dễ dàng biến ý tưởng của bạn thành hiện
+                    thực trên web.</p>
+                <h5>BẮT ĐẦU VỚI SWAY</h5>
+            </a>
         </div>
     </div>
 </div>
@@ -212,38 +213,42 @@
         <div class="col-sm-12"
              style="font-weight: bold; margin-left: 15px; font-size: 22px;">
             Cho công việc</div>
-        <div class="col-sm-3">
-            <ul class="list-unstyled">
-                <li><a href="#"> <img src="images/home/office365doanhnghiep.png"></a></li>
-                <li style="font-weight:bold;"> <a href="#"> Office 365 cho Doanh nghiệp </a></li>
-                <li><a href="#"> Truy cập vào tệp tin từ mọi nơi, dù trực tuyến hay ngoại tuyến.</a></li>
-                <li><a href="#"> TÌM HIỂU THÊM VỀ OFFICE 365 </a></li>
-            </ul>
+        <div class="col-sm-3 products-grid-item">
+            <a  href="#">
+                <img src="images/home/office365doanhnghiep.png">
+                <h3> Office 365 cho Doanh nghiệp </h3>
+                <p>Truy cập vào tệp tin từ mọi nơi, dù trực tuyến hay ngoại tuyến.</p>
+                <h5>TÌM HIỂU THÊM VỀ OFFICE 365</h5>
+            </a>
         </div>
-        <div class="col-sm-3">
-            <ul class="list-unstyled">
-                <li><a href="#"> <img src="images/home/w10.png"></a></li>
-                <li style="font-weight:bold;"><a href="#"> Windows 10 Enterprise </a></li>
-                <li><a href="#"> Truy cập vào tệp tin từ mọi nơi, dù trực tuyến hay ngoại tuyến.</a></li>
-                <li><a href="#"> TẢI XUỐNG NGAY</a></li>
-            </ul>
+
+        <div class="col-sm-3 products-grid-item">
+            <a  href="#">
+                <img src="images/home/w10.png">
+                <h3> Windows 10 Enterprise </h3>
+                <p>Truy cập vào tệp tin từ mọi nơi, dù trực tuyến hay ngoại tuyến.</p>
+                <h5>TẢI XUỐNG NGAY</h5>
+            </a>
         </div>
-        <div class="col-sm-3">
-            <ul class="list-unstyled">
-                <li><a href="#"> <img src="images/home/vs17.png"></a></li>
-                <li style="font-weight:bold;"><a href="#"> Visual Studio 2017 </a></li>
-                <li><a href="#"> Năng suất cho mọi nhà phát triển, mọi ứng dụng và mọi nền tảng.</a></li>
-                <li><a href="#"> TẢI XUỐNG VISUAL STUDIO 2017</a></li>
-            </ul>
+
+        <div class="col-sm-3 products-grid-item">
+            <a  href="#">
+                <img src="images/home/vs17.png">
+                <h3> Visual Studio 2017  </h3>
+                <p>Năng suất cho mọi nhà phát triển, mọi ứng dụng và mọi nền tảng.</p>
+                <h5>TẢI XUỐNG VISUAL STUDIO 2017</h5>
+            </a>
         </div>
-        <div class="col-sm-3">
-            <ul class="list-unstyled">
-                <li><a href="#"> <img src="images/home/msCRM.png"></a></li>
-                <li style="font-weight:bold;"><a href="#"> Microsoft Dynamics CRM </a></li>
-                <li><a href="#"> Trải nghiệm các tính năng mới hiện có.</a></li>
-                <li><a href="#"> DÙNG THỬ DYNAMICS CRM</a></li>
-            </ul>
+
+        <div class="col-sm-3 products-grid-item">
+            <a  href="#">
+                <img src="images/home/msCRM.png">
+                <h3> Microsoft Dynamics CRM </h3>
+                <p>Trải nghiệm các tính năng mới hiện có.</p>
+                <h5>DÙNG THỬ DYNAMICS CRM</h5>
+            </a>
         </div>
+
     </div>
     <!-- Link to Facebook-->
     <p style="margin-left:10px; padding-bottom: 15px; padding-top:15px;"> Dõi theo trên Microsoft
@@ -316,7 +321,7 @@
         </div>
 
         <div class="row">
-            <a href="#"> <img src="images/home/earth.png" height="15" width="15">Tiếng
+            <a href="#"> <img src="images/home/earth.png" height="15" width="15"> Tiếng
                 Việt (Việt Nam)
             </a>
 

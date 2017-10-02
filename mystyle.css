@@ -1,32 +1,49 @@
 .container {}
+html {  font-size: 15px;  font-family: 'Segoe UI',SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;}
+p {  font-size: 1rem;  font-family: 'Segoe UI',SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif; }
 
 body{ background:white; margin:0}
 .mainmenu{background-color:#ffffff; border:none; z-index:999; position: relative;}
 ul.mainmenu{text-align:left; display:inline; margin:0; padding:0; list-style:none;}
-ul.mainmenu li {display:inline-block; position:relative; padding: 7px 7px; background:white;}
+ul.mainmenu li {display:inline-block; padding: 7px 7px; background:white;}
 ul.mainmenu li a{ text-decoration: none; padding: 10px 10px;color: black;}
 ul.mainmenu li:hover {text-decoration:underline;background:white}
-ul.mainmenu li ul { padding: 0; position: absolute; top: 55px; left:0; width: 300px; display: none;}
+ul.mainmenu li ul { padding: 0; position: absolute; top: 55px; left:0; width: 350px; height: 200px; display: none;}
 ul.mainmenu li ul li {background:#e5e5e5;; display: block}
 ul.mainmenu li ul li:hover { background:#E0E0E0;}
 ul.mainmenu li:hover ul { display:block; visibility:visible;}
 ul.mainmenu ul ul li {display:none; background:#e5e5e5;}
 ul.mainmenu ul li:hover li{display: block;}
 ul.mainmenu ul ul {left: 100%; top: 0%}
+
 .cart {float:right;padding-top:15px;}
-.footer{background-color:#f2f2f2; font-size:11px;padding-top:10px;}
-.footer li, .footer li a {padding:5px 5px 5px 0px; color:black;}
-.footer a {padding-left: 15px; color:black;}
+/*jumbo and slideshows*/
 .newjumbo {position: relative; padding-left:0px; padding-right:0px; padding-top: 28px; margin-bottom:10px; margin-top:10px;}
 .newjumbo img {width: 1140px; }
 .carousel-inner {margin-top:15px; margin-bottom:15px;}
-.smallgrid { margin-left: 10px; margin-right: 10px;  margin-top: 15px;  margin-bottom: 20px; padding-left: 0px;  padding-right: 0px; padding-top: 28px;}
-ul.list-unstyled {padding-left: 5px;  padding-right: 5px;}
-ul.list-unstyled img {width: 248px; padding-top: 15px;}
-ul.list-unstyled li a {color:black; padding-top:10px;}
+
+/*Grid item*/
+.smallgrid  { margin-left: 10px; margin-right: 10px;  margin-top: 10px;  margin-bottom: 10px; padding-left: 15px;  padding-right: 15px; padding-top: 10px;}
+.products-grid-item a{  color: black;}
+.products-grid-item a img{  width:248px ;padding-top: 15px;  }
+.products-grid-item a h5{  color: #0067B8;  }
+.products-grid-item:hover a{  text-decoration: none;  }
+.products-grid-item:hover a img{  opacity: 0.6;  }
+.products-grid-item:hover a h5, .products-grid-item:hover a h3{  text-decoration: underline;  }
+
+
+/*footer*/
+.footer{background-color:#f2f2f2; padding-top:10px;}
+.footer li { padding-top: 15px; font-size:13px;}
+.footer li a {padding:5px 5px 10px 0px; color:black;font-size:11px;}
+.footer a {padding-left: 15px; color:black;}
 .cap1{position: absolute;  left: 10%; top:30%; bottom: 20px;  right: auto;  z-index: 10;  color: #fff;text-align:left;}
 .cap2{position: absolute;  left: 10%; top:30%; bottom: 20px;  right: auto;  z-index: 10;  color: black;text-align:left;}
+.whiteb {background-color:white; color:black;boder-radius:0px;}
+.blackb {background-color:black; color:white; boder-radius:0px;}
 .cap3{position: absolute;  left: 7%; top:35%;  right: auto;  color: black;text-align:left;}
+
+/*css  for childpage 2 - Mua Office 365 Home*/
 .submenu{z-index:998; position:relative;}
 ul.subnmenu{text-align:left; display:inline; margin:0; padding:0; list-style:none;}
 ul.submenu li {display:inline-block; position:relative; padding: 7px 7px; background:white;}
@@ -43,8 +60,6 @@ ul.submenu ul ul {left: 100%; top: 0%}
 .productdetails {padding: 36px 36px 0px 36px;}
 .beforefooter {padding: 48px 36px 0px 48px;}
 .allbutton {margin-bottom:25px;}
-
-
 
 
 
