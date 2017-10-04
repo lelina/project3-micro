@@ -129,7 +129,7 @@ ul.nav.navbar-nav li a {
 
 .jumbo {
 	padding: 0 70px;
-	height: 455px;
+	height: 70%;
 }
 
 .jumbo .jumbotron {
@@ -137,11 +137,13 @@ ul.nav.navbar-nav li a {
 	padding: 0;
 	margin: 0;
 	height: inherit;
+	position: relative;
 }
 
 .jumbotron img {
 	width: 100%;
-	height: inherit;
+	height: auto;
+	overflow: hidden;
 }
 
 .jumbotron p {
@@ -158,16 +160,16 @@ ul.nav.navbar-nav li a {
 	margin: 0 auto;
 	vertical-align: middle;
 	position: absolute;
-	width: 1209px;
-	height: 455px;
-	top: 100px;
+	width: 100%;
+	height: inherit;
+	top: 0;
 	bottom: 0;
 	z-index: 100;
 }
 
 .jumbotron-content div {
 	width: 40%;
-	margin: 140px 0;
+	margin: 10% 0;
 }
 
 .jumbotron-content div a {
@@ -291,5 +293,19 @@ a.row4:hover h3 {
 
 /*REponsive*/
 @media (min-width: 768px) and (max-width: 992px) {
-	.jumbotron-content {top: 170px;}
+	.main-content:first-child {padding: 0;}
+	.jumbo {padding: 0;}
+}
+@media (max-width: 768px) {
+	.main-content:first-child {padding: 0;}
+	.jumbo {padding: 0;}
+	.jumbotron-content {
+		position: static;		
+		text-align: center;
+	}
+	.jumbotron-content div {
+		position: static;
+		margin: 10% 0;
+		width: 100%;
+	}
 }
