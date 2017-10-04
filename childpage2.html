@@ -193,10 +193,21 @@
                 <span class="glyphicon glyphicon-star-empty "></span>
                 <span class="glyphicon glyphicon-star-empty"></span>
             </p>
-            <h4>1.699.000,00 <span style="text-decoration: underline;">đ</style></span></h4>
+            <h4 class="price-tag" id="price-tag">1.699.000,00 <span style="text-decoration: underline;">đ</style></span></h4>
             <h5> Chọn sản phẩm của bạn:</h5>
-            <button type="button" class="btn btn-default allbutton active">1 - Tự động gia hạn theo năm</button>
-            <button type="button" class="btn btn-default allbutton">1 - Tự động gia hạn theo tháng</button>
+            <button type="button" class="btn btn-default allbutton active" onclick="yearSubscription();">1 - Tự động gia hạn theo năm</button>
+            <button type="button" class="btn btn-default allbutton" onclick="monthSubscription();">1 - Tự động gia hạn theo tháng</button>
+
+            <script>
+              function yearSubscription() {
+                document.getElementById("price-tag").innerHTML = "1.699.000,00 đ";
+              }
+
+              function monthSubscription() {
+                document.getElementById("price-tag").innerHTML = "170.000,00 đ";
+              }
+
+            </script>
             <button type="button" class="btn btn-primary allbutton"> Mua và tải xuống ngay bây giờ</button>
             <h4> Mô tả </h4>
             <ul>
