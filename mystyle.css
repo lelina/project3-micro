@@ -1,28 +1,51 @@
 .container {}
 html {  font-size: 15px;  font-family: 'Segoe UI',SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;}
 p {  font-size: 1rem;  font-family: 'Segoe UI',SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif; }
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Segoe UI',SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+a {
+    font-family: 'Segoe UI',SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI',SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
 
 body{ background:white; margin:0}
 .mainmenu{background-color:#ffffff; border:none; z-index:999; position: relative;}
 ul.mainmenu{text-align:left; display:inline; margin:0; padding:0; list-style:none;}
 ul.mainmenu li {display:inline-block; padding: 7px 7px; background:white;}
-ul.mainmenu li a{ text-decoration: none; padding: 10px 10px;color: black;}
+ul.mainmenu li a { text-decoration: none; padding: 10px 10px;color: black;}
 ul.mainmenu li:hover {text-decoration:underline;background:white}
 ul.mainmenu li ul { padding: 0; position: absolute; top: 55px; left:0; width: 350px; height: 200px; display: none;}
-ul.mainmenu li ul li {background:#e5e5e5;; display: block}
+ul.mainmenu li ul li {background:#e6e6e6;; display: block}
 ul.mainmenu li ul li:hover { background:#E0E0E0;}
 ul.mainmenu li:hover ul { display:block; visibility:visible;}
 ul.mainmenu ul ul li {display:none; background:#e5e5e5;}
 ul.mainmenu ul li:hover li{display: block;}
 ul.mainmenu ul ul {left: 100%; top: 0%}
-
+ul.mainmenu li a span {  float:right;  margin-right: 5px;}
+.caret {margin-top:10px;margin-left:5px;}
 .cart {float:right;padding-top:15px;}
 /*jumbo and slideshows*/
 .newjumbo {position: relative; padding-left:0px; padding-right:0px; padding-top: 28px; margin-bottom:10px; margin-top:10px;}
 .newjumbo img {width: 1140px; }
 .carousel-inner {margin-top:15px; margin-bottom:15px;}
+.cap1{position: absolute;  left: 10%; top:30%; bottom: 20px;  right: auto;  z-index: 10;  color: #fff;text-align:left;}
+.cap2{position: absolute;  left: 10%; top:30%; bottom: 20px;  right: auto;  z-index: 10;  color: black;text-align:left;}
+.cap2 a {border:2px black solid; background-color:black; color:white; padding: 5px 25px 5px 25px; margin-top: 20px; }
+.cap2 a span {padding-right:10px;}
 
-/*Grid item*/
+    /*Grid item*/
 .smallgrid  { margin-left: 10px; margin-right: 10px;  margin-top: 10px;  margin-bottom: 10px; padding-left: 15px;  padding-right: 15px; padding-top: 10px;}
 .products-grid-item a{  color: black;}
 .products-grid-item a img{  width:248px ;padding-top: 15px;  }
@@ -37,8 +60,7 @@ ul.mainmenu ul ul {left: 100%; top: 0%}
 .footer li { padding-top: 15px; font-size:13px;}
 .footer li a {padding:5px 5px 10px 0px; color:black;font-size:11px;}
 .footer a {padding-left: 15px; color:black;}
-.cap1{position: absolute;  left: 10%; top:30%; bottom: 20px;  right: auto;  z-index: 10;  color: #fff;text-align:left;}
-.cap2{position: absolute;  left: 10%; top:30%; bottom: 20px;  right: auto;  z-index: 10;  color: black;text-align:left;}
+
 .whiteb {background-color:white; color:black;boder-radius:0px;}
 .blackb {background-color:black; color:white; boder-radius:0px;}
 .cap3{position: absolute;  left: 7%; top:35%;  right: auto;  color: black;text-align:left;}
