@@ -204,6 +204,7 @@ ul.nav.navbar-nav li a {
 	padding-top: 10px;
 }
 
+
 .grid-content {
 	padding: 0;
 }
@@ -267,9 +268,6 @@ a.row4:hover img {
 	opacity: 0.75;
 }
 
-
-
-
 .footer {
 	background-color:#f2f2f2;
 	font-size:11px;
@@ -312,5 +310,5 @@ a.row4:hover img {
 		margin: 10% 0;
 		width: 100%;
 	}
-	
+
 }
