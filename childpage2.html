@@ -15,7 +15,7 @@
 <nav class="navbar navbar-default mainmenu">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#"
+            <a class="navbar-brand" href="webMS.html"
                style="font-weight: bold; font-family: 'Segoe UI', SegoeUI, Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 15px;"><img
                     src="images/home/logo.png" height="25" width="25" style="float: left;">
                 &nbsp;Microsoft</a>
@@ -26,7 +26,7 @@
         <ul class="nav navbar-nav navbar-lef mainmenu">
             <li><a href="#">Store <span class="caret"></span></a>
                 <ul>
-                    <li><a href="#">Cửa hàng</a></li>
+                    <li><a href="Microsoft_Store.html">Cửa hàng</a></li>
                     <li><a href="#">Phần mềm và ứng dụng <span class="caret"></span></a>
                         <ul>
                             <li><a href="#">Office</a></li>
@@ -202,11 +202,26 @@
                 <span class="glyphicon glyphicon-star-empty "></span>
                 <span class="glyphicon glyphicon-star-empty"></span>
             </p>
-            <h4>1.699.000,00 <span style="text-decoration: underline;">đ</style></span></h4>
+            <h4 id="price">1.699.000,00 <span style="text-decoration: underline;">đ</style></span></h4>
             <h5> Chọn sản phẩm của bạn:</h5>
-            <button type="button" class="btn btn-default allbutton active">1 - Tự động gia hạn Hàng năm</button>
-            <button type="button" class="btn btn-default allbutton">1 - Tự động gia hạn Hàng tháng</button>
+            <button type="button" class="btn btn-default allbutton year active">1 - Tự động gia hạn Hàng năm</button>
+            <button type="button" class="btn btn-default allbutton month">1 - Tự động gia hạn Hàng tháng</button>
             <button type="button" class="btn btn-primary allbutton"> Mua và tải xuống ngay bây giờ</button>
+            <script>
+              var yearSubscription = document.querySelector(".year");
+              var monthSubscription = document.querySelector(".month");
+
+              yearSubscription.addEventListener('click', function() {
+                document.getElementById('price').innerHTML = "1.699.000,00 ₫";
+                $(this).addClass('active');
+                $('.month').removeClass('active');
+              });
+              monthSubscription.addEventListener('click', function() {
+                document.getElementById('price').innerHTML = "170.000,00 ₫";
+                $(this).addClass('active');
+                $('.year').removeClass('active');
+              });
+            </script>
             <h3 style ="font-weight:bold";> Mô tả </h3>
             <ul>
                 <li>Phù hợp với gia đình</li>
