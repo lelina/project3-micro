@@ -169,7 +169,7 @@ ul.nav.navbar-nav li a {
 
 .jumbotron-content div {
 	width: 40%;
-	margin: 10% 0;
+	margin: 15% 0;
 }
 
 .jumbotron-content div a {
@@ -263,6 +263,9 @@ a.row4:hover {
 a.row4:hover h3 {
 	text-decoration: underline;
 }
+a.row4:hover img {
+	opacity: 0.75;
+}
 
 
 
@@ -295,12 +298,13 @@ a.row4:hover h3 {
 @media (min-width: 768px) and (max-width: 992px) {
 	.main-content:first-child {padding: 0;}
 	.jumbo {padding: 0;}
+	.jumbotron-content div {margin-top: 10%;}
 }
 @media (max-width: 768px) {
 	.main-content:first-child {padding: 0;}
 	.jumbo {padding: 0;}
 	.jumbotron-content {
-		position: static;		
+		position: static;
 		text-align: center;
 	}
 	.jumbotron-content div {
@@ -308,4 +312,5 @@ a.row4:hover h3 {
 		margin: 10% 0;
 		width: 100%;
 	}
+	
 }
