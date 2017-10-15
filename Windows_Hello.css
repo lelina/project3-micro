@@ -1,0 +1,156 @@
+.container {}
+
+body{ background:white; margin:0}
+.mainmenu{background-color:#ffffff; border:none; z-index:999; position: relative;}
+ul.mainmenu{text-align:left; display:inline; margin:0; padding:0; list-style:none;}
+ul.mainmenu li {display:inline-block; position:relative; padding: 7px 7px; background:white;}
+ul.mainmenu li a{ text-decoration: none; padding: 10px 10px;color: black;}
+ul.mainmenu li:hover {text-decoration:underline;background:white}
+ul.mainmenu li ul { padding: 0; position: absolute; top: 55px; left:0; width: 300px; display: none;}
+ul.mainmenu li ul li {background:#e5e5e5;; display: block}
+ul.mainmenu li ul li:hover { background:#E0E0E0;}
+ul.mainmenu li:hover ul { display:block; visibility:visible;}
+ul.mainmenu ul ul li {display:none; background:#e5e5e5;}
+ul.mainmenu ul li:hover li{display: block;}
+ul.mainmenu ul ul {left: 100%; top: 0%}
+
+.cart {float:right;padding-top:15px;}
+.button {
+    padding: 15px 25px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+}
+
+.button:hover {background-color: blue}
+
+.button:active {
+    background-color: blue;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+video {
+    width: 500%;
+    height: auto;
+}
+.container text-center{
+    font-size: 300%;
+}
+.div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 300px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 300%;
+    height: auto;
+}
+
+div.caption {
+    padding: 15px;
+    text-align: center;
+}
+
+.container 2 text-center{
+    font-size: 300%;.div.gallery {
+                        margin: 5px;
+                        border: 1px solid #ccc;
+                        float: left;
+                        width: 300px;
+                    }
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 300%;
+    height: auto;
+}
+
+div.caption {
+    padding: 15px;
+    text-align: center;
+}
+
+container 3 text-center{font-size: 300%;}
+img {
+    width: 500%;
+    height:500; }
+
+
+
+
+
+.footer{background-color:#f2f2f2; font-size:11px;padding-top:10px;}
+.footer li, .footer li a {padding:5px 5px 5px 0px; color:black;}
+.footer a {padding-left: 15px; color:black;}
+.newjumbo {position: relative; padding-left:0px; padding-right:0px; padding-top: 28px; margin-bottom:10px; margin-top:10px;}
+.newjumbo img {width: 1140px; }
+.carousel-inner {margin-top:15px; margin-bottom:15px;}
+.smallgrid { margin-left: 10px; margin-right: 10px;  margin-top: 15px;  margin-bottom: 20px; padding-left: 0px;  padding-right: 0px; padding-top: 28px;}
+
+ul.list-unstyled {padding-left: 5px;  padding-right: 5px;}
+ul.list-unstyled img {width: 248px; padding-top: 15px;}
+ul.list-unstyled li a {color:black; padding-top:10px;}
+
+.cap1{position: absolute;  left: 10%; top:30%; bottom: 20px;  right: auto;  z-index: 10;  color: #fff;text-align:left;}
+.cap2{position: absolute;  left: 10%; top:30%; bottom: 20px;  right: auto;  z-index: 10;  color: black;text-align:left;}
+.cap3{position: absolute;  left: 7%; top:35%;  right: auto;  color: black;text-align:left;}
+.submenu{z-index:998; position:relative;}
+ul.subnmenu{text-align:left; display:inline; margin:0; padding:0; list-style:none;}
+ul.submenu li {display:inline-block; position:relative; padding: 7px 7px; background:white;}
+ul.submenu li a{ text-decoration: none; padding: 10px 10px;color: black;}
+ul.submenu li:hover {text-decoration:underline;background:white}
+ul.submenu li ul { padding: 0; position: absolute; top: 55px; left:0; width: 300px; display: none;}
+ul.submenu li ul li {background:#e5e5e5;; display: block}
+ul.submenu li ul li:hover { background:#E0E0E0;}
+ul.submenu li:hover ul { display:block; visibility:visible;}
+ul.submenu ul ul li {display:none; background:#e5e5e5;}
+ul.submenu ul li:hover li{display: block;}
+ul.submenu ul ul {left: 100%; top: 0%}
+.smallsilde {margin-top:90px;}
+.productdetails {padding: 36px 36px 0px 36px;}
+.beforefooter {padding: 48px 36px 0px 48px;}
+.allbutton {margin-bottom:25px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#brand {font-weight: bold; padding: 15px 15px 15px 20px;}
+#logo {float: left !important; padding: 10px 10px;}
+.navbar,.container-fluid,.navbar-default {background-color:white;border-color:white;}
+.border col-sm-2 {background-color:#f2f2f2;}
+/*#menu a {
+    background-color: white;
+    text-decoration: none;
+    padding-bottom: 0px;
+}
+#menu a:hover {
+    background-color: white;
+    border-bottom: black solid 1px;
+}
+#menu a:active { background-color: lightgray}*/
