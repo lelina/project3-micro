@@ -1,10 +1,10 @@
 
 
-body{ background:white; margin:0}
+body{ background:white; margin:0; font-size: 16px;}
 .navbar.navbar-default {
 	background-color: #fff;
 	border: none;
-
+	z-index: 100;
 	padding-right: 70px;
 	margin-bottom: 0;
 
@@ -69,6 +69,7 @@ body{ background:white; margin:0}
 
 
 .cart {float:right;padding-top:15px;}
+/*
 .button {
     padding: 15px 25px;
     font-size: 20px;
@@ -88,13 +89,16 @@ body{ background:white; margin:0}
     background-color: blue;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+*/
 video {
-    width: 500%;
+    width: 100%;
     height: auto;
+		z-index: 1;
 }
 .container text-center{
     font-size: 300%;
 }
+/*
 .div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
@@ -144,8 +148,8 @@ img {
     height:500; }
 
 
-
-
+*/
+/*
 
 .footer{background-color:#f2f2f2; font-size:11px;padding-top:10px;}
 .footer li, .footer li a {padding:5px 5px 5px 0px; color:black;}
@@ -178,7 +182,31 @@ ul.submenu ul ul {left: 100%; top: 0%}
 .productdetails {padding: 36px 36px 0px 36px;}
 .beforefooter {padding: 48px 36px 0px 48px;}
 .allbutton {margin-bottom:25px;}
+*/
 
+.footer {
+	background-color:#f2f2f2;
+
+	margin-top: 50px;
+}
+
+.footer .container {
+	padding-top: 36px;
+	width: 90%;
+	margin: 0 auto;
+}
+.footer li, .footer a {
+	color: #616161;
+}
+
+.footer li {
+	padding:5px;
+	font-size: 1em;
+}
+
+.footer a, #copyright {
+	font-size: 0.75em;
+}
 
 
 

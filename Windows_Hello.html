@@ -7,7 +7,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="Windows_Hello.css">
+    <!--<link rel="stylesheet" href="Windows_Hello.css">-->
+    <link rel="stylesheet" href="Microsoft Store.css">
+    <style>
+      div.row .text-center {
+        width: 50%;
+        margin: 10px auto;
+      }
+    </style>
 </head>
 <body>
   <!--Header-->
@@ -141,48 +148,53 @@
               <li><a href="#"> Danh cho doanh nghiep </a></li>
               <li><a href="#"> Ho tro  </a></li>
           </ul>
-          <button class="btn navbar-btn navbar-right">MUA WINDOW 10</button>
+          <button class="btn btn-primary navbar-btn navbar-right">MUA WINDOW 10</button>
 
         </div>
       </div>
   </nav>
   <!--Mainbody-->
   <center>
-      <video width="900" center autoplay>
+      <video width="100%" height="auto" center autoplay>
           <source src="http://wincom.blob.core.windows.net/videos/1920-1600x300-hello.mp4" type="video/mp4">
           <source src="movie.ogg" type="video/ogg">
           Your browser does not support the video tag.
       </video>
   </center>
-  <div class="container text-center">
+  <div class="container">
+    <div class="row text-center">
       <h3>Windows Hello : <br>Bạn chính là mật khẩu</h3>
-      Windows Hello chỉ mất chưa đến 2 giây để giúp bạn đăng nhập vào các thiết bị Windows, tức là nhanh hơn 3 lần so với khi dùng mật khẩu1.<br>
+      <p>Windows Hello chỉ mất chưa đến 2 giây để giúp bạn đăng nhập vào các thiết bị Windows, tức là nhanh hơn 3 lần so với khi dùng mật khẩu1.<br>
       Sử dụng máy ảnh để nhận diện khuôn mặt bạn hoặc thử dùng đầu đọc dấu vân tay8 – dù dùng cách nào thì Windows Hello cũng sẽ ngay lập tức nhận diện ra bạn.<br>
-      Bạn luôn có thể dùng mã PIN để làm phương tiện dự phòng.
-
-      <div class="container">
-          <img src="https://c.s-microsoft.com/vi-vn/CMSImages/Windows_Hello_1920_Video_IMG.jpg?version=59af57a4-f452-c951-4382-040484ec5834" class="img-responsive" style="width:1000%" width="500px" alt="Image"/>
+      Bạn luôn có thể dùng mã PIN để làm phương tiện dự phòng.</p>
+    </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-12">
+          <img src="https://c.s-microsoft.com/vi-vn/CMSImages/Windows_Hello_1920_Video_IMG.jpg?version=59af57a4-f452-c951-4382-040484ec5834" class="img-responsive" alt="Image"/>
+        </div>
       </div>
 
-      <div class="container 2 text-center">
-          <h4>Đăng nhập theo cách của bạn <br>
+
+      <div class="row text-center">
+          <h3>Đăng nhập theo cách của bạn</h3>
           Việc kích hoạt Windows Hello sẽ bật tính năng đăng nhập bằng khuôn mặt hoặc dấu vân tay<br>
           Đăng nhập nhanh và bảo mật hơn vào máy tính xách tay, máy tính bảng, thiết bị, ứng dụng hoặc thậm chí là các trang web; hơn thế nữa,
           bạn còn có thể thực hiện mua tính năng mở rộng.
-          </h4>
-          <div class="row">
-              <div class="col-sm-6">
-                  <img src="https://c.s-microsoft.com/vi-vn/CMSImages/Windows_Hello_1920_Carousel_en-US.jpg?version=33606bc2-f95f-b494-27df-28c7249f876f" class="img-responsive" style="width:100%" alt="Image">
-                  <p>Đăng nhập bằng nụ cười của bạn</p>
-              </div>
-              <div class="col-sm-6">
-                  <img src="https://c.s-microsoft.com/vi-vn/CMSImages/EN-US_Windows_Hello_Fingerprint_740x417.jpg?version=714df16c-7677-1353-25e7-b0276344f65c" class="img-responsive" style="width:100%" alt="Image">
-                  <p>Đăng nhập bằng dấu vân tay của bạn</p>
-              </div>
+      </div>
+
+      <div class="row">
+          <div class="col-sm-6">
+              <img src="https://c.s-microsoft.com/vi-vn/CMSImages/Windows_Hello_1920_Carousel_en-US.jpg?version=33606bc2-f95f-b494-27df-28c7249f876f" class="img-responsive" style="width:100%" alt="Image">
+              <p>Đăng nhập bằng nụ cười của bạn</p>
+          </div>
+          <div class="col-sm-6">
+              <img src="https://c.s-microsoft.com/vi-vn/CMSImages/EN-US_Windows_Hello_Fingerprint_740x417.jpg?version=714df16c-7677-1353-25e7-b0276344f65c" class="img-responsive" style="width:100%" alt="Image">
+              <p>Đăng nhập bằng dấu vân tay của bạn</p>
           </div>
       </div>
 
-      <div class="container 3 text-center">
+
+      <div class="row">
         <div class="row">
           <div class="col-sm-8">
             <img src="https://c.s-microsoft.com/vi-vn/CMSImages/Windows_Hello_1399_Companion_IMG.jpg?version=b0404223-a9d8-ad66-d259-c592afabf236" class="img-responsive" style="width:800%" alt="Image">
@@ -196,7 +208,127 @@
           </div>
         </div>
       </div>
+
+
+     <div class="row smallgrid">
+           <div class="col-sm-3">
+               <ul class="list-unstyled">
+                   <li><a href="#"> <img src="images\home\msStore.png"></a></li>
+                   <li style="font-weight: bold;"><a href="#">
+                   CHUONG TRINH NGUOI DUNG NOI BO WINDOW </a></li>
+               </ul>
+           </div>
+           <div class="col-sm-3">
+               <ul class="list-unstyled">
+                   <li><a href="#"> <img src="images/home/outlook.png"></a></li>
+                   <li style="font-weight: bold;"><a href="#"> Outlook </a></li>
+                   <li><a href="#"> HO TRO Windows. </a></li>
+               </ul>
+           </div>
+
+           <div class="col-sm-3">
+               <ul class="list-unstyled">
+                   <li><a href="#"> <img src="images/home/onenote.png"></a></li>
+                   <li style="font-weight: bold;"><a href="#">
+                   Blog WINDOWS </a></li>
+               </ul>
+
+           </div>
+           <div class="col-sm-3">
+               <ul class="list-unstyled">
+                   <li><a href="#"> <img src="images/home/sway.png"></a></li>
+                   <li style="font-weight: bold;"><a href="#"> CONG DONG WINDOWS </a></li>
+               </ul>
+           </div>
+        </div>
   </div>
+
+
+  <!-- footer-->
+  <footer class="footer">
+      <div class="container">
+
+          <div class="row">
+
+            <div class="col-sm-12 col-md-6">
+              <div class="col-md-4 col-sm-4 ">
+                  <ul class="list-unstyled">
+                      <li style="font-weight: bold;">Nội dung mới</li>
+                      <li><a href="#">Ứng dụng cho Windows 10 </a></li>
+                      <li><a href="#">Các ứng dụng cho Office style </a></li>
+                  </ul>
+              </div>
+              <div class="col-md-4 col-sm-4 ">
+                  <ul class="list-unstyled">
+                      <li style="font-weight: bold;">Cửa hàng &amp; hỗ trợ</li>
+                      <li><a href="#">Hồ sơ tài khoản </a></li>
+                      <li><a href="#">Trung tâm tải xuống </a></li>
+                      <li><a href="#">Trả lại </a></li>
+                      <li><a href="#">Theo dõi đơn hàng </a></li>
+                      <li><a href="#">Vị trí cửa hàng </a></li>
+                      <li><a href="#">Hỗ trợ </a></li>
+                  </ul>
+              </div>
+              <div class="col-md-4 col-sm-4 ">
+                  <ul class="list-unstyled">
+                      <li style="font-weight: bold;">Giáo dục</li>
+                      <li><a href="#">Microsoft trong giáo dục </a></li>
+                      <li><a href="#">Office cho học sinh </a></li>
+                      <li><a href="#">Office 365 cho trường học</a></li>
+                      <li><a href="#">Ưu đãi dành cho sinh viên &amp; giảng viên</a></li>
+                  </ul>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6">
+              <div class="col-md-4 col-sm-4 ">
+                  <ul class="list-unstyled">
+                      <li style="font-weight: bold;">Doanh nghiệp</li>
+                      <li><a href="#">Microsoft Azure </a></li>
+                      <li><a href="#">Doanh nghiệp </a></li>
+                      <li><a href="#">Sản xuất &amp; tài nguyên</a></li>
+                      <li><a href="#">Dịch vụ tài chính</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-4 col-sm-4 ">
+                  <ul class="list-unstyled">
+                      <li style="font-weight: bold;">Nhà phát triển</li>
+                      <li><a href="#">Microsoft Visual Studio </a></li>
+                      <li><a href="#">Mạng lưới Nhà phát triển của Microsoft </a></li>
+                      <li><a href="#">Technet</a></li>
+                      <li><a href="#">Học viện ảo của Microsoft</a></li>
+                      <li><a href="#">Kênh 9</a></li>
+                      <li><a href="#">Trung tâm Phát triển Office</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-4 col-sm-4 ">
+                  <ul class="list-unstyled">
+                      <li style="font-weight: bold;">Công ty</li>
+                      <li><a href="#">Sự nghiệp </a></li>
+                      <li><a href="#">Giới thiệu về Microsoft </a></li>
+                      <li><a href="#">Tin tức công ty</a></li>
+                      <li><a href="#">Quyền riêng tư ở Microsoft</a></li>
+                      <li><a href="#">Nhà đầu tư </a></li>
+                  </ul>
+              </div>
+          </div>
+
+        </div>
+
+          <div class="row">
+              <a href="#"><span class="glyphicon glyphicon-globe"></span>  Tiếng Việt (Việt Nam)</a>
+
+              <ul class="list-inline pull-right">
+                  <li><a href="#"> Liên hệ với chúng tôi </a></li>
+                  <li><a href="#"> Điều khoản về quyền riêng tư </a></li>
+                  <li><a href="#"> Điều khoản sử dụng </a></li>
+                  <li><a href="#"> Nhãn hiệu </a></li>
+                  <li><a href="#"> Giới thiệu về quảng cáo của chúng tôi</a></li>
+                  <li id="copyright">© Microsoft 2017</li>
+              </ul>
+          </div>
+      </div>
+  </footer>
 
 
 
