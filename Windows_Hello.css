@@ -1,18 +1,72 @@
-.container {}
+
 
 body{ background:white; margin:0}
-.mainmenu{background-color:#ffffff; border:none; z-index:999; position: relative;}
-ul.mainmenu{text-align:left; display:inline; margin:0; padding:0; list-style:none;}
-ul.mainmenu li {display:inline-block; position:relative; padding: 7px 7px; background:white;}
-ul.mainmenu li a{ text-decoration: none; padding: 10px 10px;color: black;}
-ul.mainmenu li:hover {text-decoration:underline;background:white}
-ul.mainmenu li ul { padding: 0; position: absolute; top: 55px; left:0; width: 300px; display: none;}
-ul.mainmenu li ul li {background:#e5e5e5;; display: block}
-ul.mainmenu li ul li:hover { background:#E0E0E0;}
-ul.mainmenu li:hover ul { display:block; visibility:visible;}
-ul.mainmenu ul ul li {display:none; background:#e5e5e5;}
-ul.mainmenu ul li:hover li{display: block;}
-ul.mainmenu ul ul {left: 100%; top: 0%}
+.navbar.navbar-default {
+	background-color: #fff;
+	border: none;
+
+	padding-right: 70px;
+	margin-bottom: 0;
+
+}
+
+.main-nav {
+	padding: 0 40px;
+}
+
+.sub-nav {
+	padding: 0 38px;
+}
+
+
+.nav.navbar-nav {
+	margin-left: 0;
+}
+.dropdown-menu {
+	background-color: #eee;
+	border-radius: 0;
+	border: 1px solid #ccc;
+	padding: 0;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	box-sizing: inherit;
+	max-width: 310px;
+}
+
+.dropdown-menu li a span {
+	float:right;
+	margin-right: -1.5rem;
+}
+
+.dropdown-menu li {
+	padding: 18px 30px 18px 24px;
+}
+
+.dropdown-menu li a:first-child {
+	padding: 0 0.5rem 0 0;
+}
+
+.dropdown-menu li:hover, .dropdown-menu li a:hover {
+	background-color: #E0E0E0;
+}
+
+.dropdown-menu li:hover .sub-dropdown {
+	display: block;
+	top: 0;
+	left: 100%;
+	margin-top: -1px;
+	border-left: 0;
+	border-radius: 0;
+	background-color: #e6e6e6;
+	height: 100%;
+	width: 100%;
+	box-sizing: inherit;
+}
+
+.sub-dropdown li:hover, .sub-dropdown li a:hover {
+	background-color: #ccc;
+}
+
 
 .cart {float:right;padding-top:15px;}
 .button {
