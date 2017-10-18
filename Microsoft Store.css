@@ -246,6 +246,18 @@ a.row4:hover h3 {
 a.row4:hover img {
 	opacity: 0.75;
 }
+/*Windows_hello*/
+.windows_hello {
+	padding: 0;
+
+}
+.windows_hello img {
+	width: 70px;
+	height: auto;
+}
+.text-center {
+	padding: 1rem 7rem;
+}
 
 .footer {
 	background-color:#f2f2f2;
